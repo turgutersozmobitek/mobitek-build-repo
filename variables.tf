@@ -116,6 +116,7 @@ variable "extnet_ip_pool_end" {
 }
 variable "extnet_vcenter" {
     type        = string
+    default     = "vCenter"
     description = "External Network vCenter Server"
 }
 
