@@ -29,48 +29,6 @@ variable "vcd_allow_unverified_ssl" {
     description = "vCloud allow unverified ssl"
 }
 
-# vCloud Director External Network
-variable "extnet_name" {
-    type        = string
-    description = "External Network Name"
-}
-variable "extnet_description" {
-    type        = string
-    description = "External Network Description"
-}
-variable "extnet_gw" {
-    type        = string
-    description = "External Network Gateway"
-}
-variable "extnet_mask" {
-    type        = string
-    description = "External Network Mask"
-}
-variable "extnet_dns1" {
-    type        = string
-    description = "External Network DNS1"
-}
-variable "extnet_dns2" {
-    type        = string
-    description = "External Network DNS2"
-}
-variable "extnet_suffix" {
-    type        = string
-    description = "External Network DNS Suffix"
-}
-variable "extnet_ip_pool_start" {
-    type        = string
-    description = "External Network IP Pool Start Address"
-}
-variable "extnet_ip_pool_end" {
-    type        = string
-    description = "External Network IP Pool End Address"
-}
-variable "extnet_vcenter" {
-    type        = string
-    description = "External Network vCenter Server"
-}
-
 # vCloud Director Organization Variables
 variable "org_name" {
     type        = string
@@ -116,3 +74,47 @@ variable "vdc_storage_limit" {
         type        = string
         description = "VDC Storage Limit"
 }
+
+
+# vCloud Director External Network
+variable "extnet_name" {
+    type        = string
+    description = "External Network Name"
+}
+variable "extnet_description" {
+    type        = string
+    description = "External Network Description"
+}
+variable "extnet_gw" {
+    type        = string
+    description = "External Network Gateway"
+}
+variable "extnet_mask" {
+    type        = string
+    description = "External Network Mask"
+}
+variable "extnet_dns1" {
+    type        = string
+    description = "External Network DNS1"
+}
+variable "extnet_dns2" {
+    type        = string
+    description = "External Network DNS2"
+}
+variable "extnet_suffix" {
+    type        = string
+    description = "External Network DNS Suffix"
+}
+variable "extnet_ip_pool_start" {
+    type        = string
+    description = "External Network IP Pool Start Address"
+}
+variable "extnet_ip_pool_end" {
+    type        = string
+    description = "External Network IP Pool End Address"
+}
+variable "extnet_vcenter" {
+    type        = string
+    description = "External Network vCenter Server"
+}
+
