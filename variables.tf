@@ -48,6 +48,7 @@ variable "org_description" {
 # vCloud Director Organization VDC Variables
 variable "vdc_alloc_model" {
     type        = string
+    default     = "AllocationVApp"
     description = "VDC Allocation Model"
 }
 variable "vdc_net_pool" {
