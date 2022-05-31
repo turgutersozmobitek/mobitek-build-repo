@@ -53,6 +53,7 @@ variable "vdc_alloc_model" {
 }
 variable "vdc_net_pool" {
         type        = string
+        default     = "General"
         description = "VDC Network Pool"
 }
 variable "vdc_pvdc_name" {
