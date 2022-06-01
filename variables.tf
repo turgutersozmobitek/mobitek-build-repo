@@ -1,19 +1,16 @@
 # vCloud Director Connection Variables
 variable "vcd_user" {
     type        = string
-    default     = "administrator"
     description = "vCloud user"
 }
 
 variable "vcd_pass" {
     type        = string
-    default     = "Mob12345!"
     description = "vCloud pass"
 }
 
 variable "vcd_url" {
     type        = string
-    default     = "https://81.8.0.53/api"
     description = "vCloud url"
 }
 
