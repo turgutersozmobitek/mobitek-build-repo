@@ -54,6 +54,7 @@ variable "vdc_net_pool" {
 }
 variable "vdc_pvdc_name" {
         type        = string
+        default     = "Dijitalisyerim"
         description = "VDC Provider VDC Name"
 }
 variable "vdc_description" {
@@ -66,6 +67,7 @@ variable "vdc_name" {
 }
 variable "vdc_storage_name" {
         type        = string
+        default     = "*"
         description = "VDC Storage Policy"
 }
 variable "vdc_storage_limit" {
@@ -111,6 +113,9 @@ variable "extnet_ip_pool_end" {
     type        = string
     description = "External Network IP Pool End Address"
 }
+
+
+
 variable "extnet_vcenter" {
     type        = string
     default     = "vCenter"
