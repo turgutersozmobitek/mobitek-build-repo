@@ -80,7 +80,7 @@ resource "vcd_org_vdc" "vdc-name" {
  resource "vcd_network_direct" "netdirect" {
    org = var.org_name
    vdc = var.vdc_name
-   name = "var.extnet_name"
+   name = var.extnet_name
    external_network = "Dijitalisyerim_VLAN"
    depends_on = [vcd_org_vdc.vdc-name]
  }
