@@ -87,7 +87,8 @@ resource "vcd_org_vdc" "vdc-name" {
 
  # Org vApp - Servers
  resource "vcd_vapp" "vapp" {
-   name = "Servers"
+   name = var.vapp_name
+   description = var.vapp_description
    org = var.org_name
    vdc = var.vdc_name
    depends_on = [vcd_network_direct.netdirect]
