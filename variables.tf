@@ -114,7 +114,14 @@ variable "extnet_ip_pool_end" {
     description = "External Network IP Pool End Address"
 }
 
-
+variable "vapp_name" {
+    type        = string
+    description = "vApp Uygulama adını giriniz."
+}
+variable "vapp_description" {
+    type        = string
+    description = "vApp Açıklamasını giriniz."
+}
 
 variable "extnet_vcenter" {
     type        = string
