@@ -90,7 +90,7 @@ resource "vcd_org_vdc" "vdc-name" {
    description = var.vapp_description
    org = var.org_name
    vdc = var.vdc_name
-   pover_on = true
+   power_on = true
    depends_on = [vcd_network_direct.netdirect]
    
  }
