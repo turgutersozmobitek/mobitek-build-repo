@@ -96,7 +96,7 @@ resource "vcd_org_vdc" "vdc-name" {
  }
 
 
- resource "vcd_vapp_vm" "vm" {
+ resource "vcd_vapp_vm" "firstVM" {
   vapp_name     = var.vapp_name
   name          = var.vapp_vm_name
   computer_name = var.vapp_computer_name
