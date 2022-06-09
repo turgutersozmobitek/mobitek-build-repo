@@ -1,16 +1,19 @@
 # vCloud Director Connection Variables
 variable "vcd_user" {
     type        = string
+    default     = "administrator"
     description = "vCloud user"
 }
 
 variable "vcd_pass" {
     type        = string
+    default     = "Mob12345!"
     description = "vCloud pass"
 }
 
 variable "vcd_url" {
     type        = string
+    default     = "https://81.8.0.53/api"
     description = "vCloud url"
 }
 
@@ -45,6 +48,7 @@ variable "org_description" {
 # vCloud Director Organization VDC Variables
 variable "vdc_alloc_model" {
     type        = string
+    default     = "AllocationVApp"
     description = "VDC Allocation Model"
 }
 variable "vdc_net_pool" {
@@ -87,22 +91,27 @@ variable "extnet_description" {
 }
 variable "extnet_gw" {
     type        = string
+    default     = "81.8.0.125"
     description = "External Network Gateway"
 }
 variable "extnet_mask" {
     type        = string
+    default     = "255.255.255.0"
     description = "External Network Mask"
 }
 variable "extnet_dns1" {
     type        = string
+    default     = "1.1.1.1"
     description = "External Network DNS1"
 }
 variable "extnet_dns2" {
     type        = string
+    default     = "1.0.0.1"   
     description = "External Network DNS2"
 }
 variable "extnet_suffix" {
     type        = string
+    default     = ""
     description = "External Network DNS Suffix"
 }
 variable "extnet_ip_pool_start" {
