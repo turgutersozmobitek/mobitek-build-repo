@@ -114,5 +114,4 @@ network {
   }
 
 
-  depends_on = ["vcd_vapp.vapp"]
 }
