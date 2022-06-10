@@ -100,7 +100,6 @@ resource "vcd_org_vdc" "vdc-name" {
   vapp_name     = var.vapp_name
   name          = var.vapp_vm_name
   computer_name = var.vapp_computer_name
-  vdc           = var.vdc_name
   catalog_name  = "App"
   template_name = "Win2019Std_Splalic_NonMngmt_100322"
   memory        = 2048
