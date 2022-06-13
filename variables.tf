@@ -132,16 +132,6 @@ variable "vapp_description" {
     description = "vApp Açıklamasını giriniz."
 }
 
-variable "vapp_vm_name" {
-    type        = string
-    description = "vM adını giriniz.."
-}
-variable "vapp_computer_name" {
-    type        = string
-    description = "vM Computer Name Giriniz.."
-}
-
-
 variable "extnet_vcenter" {
     type        = string
     default     = "vCenter"
