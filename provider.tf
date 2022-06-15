@@ -9,10 +9,10 @@ terraform {
 
 # Connect VMware vCloud Director Provider
 provider "vcd" {
-  user                 = var.vcd_user
+  user                 = "administrator"
   password             = var.vcd_pass
   org                  = "System"
-  url                  = var.vcd_url
-  max_retry_timeout    = var.vcd_max_retry_timeout
-  allow_unverified_ssl = var.vcd_allow_unverified_ssl
+  url                  = "https://81.8.0.53/api"
+  max_retry_timeout    = "60"
+  allow_unverified_ssl = "true"
 }
