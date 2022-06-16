@@ -64,7 +64,7 @@ resource "vcd_org_vdc" "vdc-name" {
 
   cpu_guaranteed = 0
   memory_guaranteed = 0
-  cpu_speed = 2000
+  cpu_speed = 40000
   network_quota = 10
   enabled = true
   enable_thin_provisioning = true
