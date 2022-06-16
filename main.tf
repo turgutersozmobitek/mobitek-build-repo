@@ -7,7 +7,7 @@ resource "vcd_external_network" "extnet" {
     vsphere_network {
     name    = "DPortGroup"
     type    = "DV_PORTGROUP"
-    vcenter = var.extnet_vcenter
+    vcenter = "vCenter"
   }
 
   ip_scope {
