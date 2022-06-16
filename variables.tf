@@ -1,25 +1,18 @@
-# vCloud Director Connection Variables
-
-variable "vcd_pass" {
-    type        = string
-    default     = "Mob12345!"
-    description = "vCloud pass"
-}
 
 # vCloud Director Organization Variables
 variable "org_name" {
     type        = string
-    description = "Organization Name"
+    description = "Organizasyon İsmi"
 }
 
 variable "org_full_name" {
     type        = string
-    description = "Organization Full Name"
+    description = "Organizasyon Tam İsmi"
 }
 
 variable "org_description" {
     type        = string
-    description = "Organization Description"
+    description = "Organizasyon Açıklaması"
 }
 
 # vCloud Director Organization VDC Variables
@@ -109,9 +102,4 @@ variable "vapp_description" {
     description = "vApp Açıklamasını giriniz."
 }
 
-variable "extnet_vcenter" {
-    type        = string
-    default     = "vCenter"
-    description = "External Network vCenter Server"
-}
 
