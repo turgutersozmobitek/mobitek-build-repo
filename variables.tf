@@ -1,5 +1,11 @@
 
 # vCloud Director Organization Variables
+
+variable "vcenter_name" {
+    type        = string
+    description = "vCenter Name"
+}
+
 variable "org_name" {
     type        = string
     description = "Organizasyon İsmi"
