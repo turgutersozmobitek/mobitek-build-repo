@@ -28,8 +28,8 @@ variable "vdc_net_pool" {
 }
 variable "vdc_pvdc_name" {
         type        = string
-        default     = "Dijitalisyerim"
-        description = "VDC Provider VDC Name"
+        default     = "Provider-VDC2"
+        description = "VDC Provider VDC Name (Provider-VDC2 - Provider-VDC3)"
 }
 variable "vdc_description" {
     type        = string
@@ -41,7 +41,7 @@ variable "vdc_name" {
 }
 variable "vdc_storage_name" {
         type        = string
-        default     = "*"
+        default     = "vCloud-Esenyurt"
         description = "VDC Storage Policy"
 }
 variable "vdc_storage_limit" {
