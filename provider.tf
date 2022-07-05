@@ -8,10 +8,10 @@ terraform {
 }
 # Connect VMware vCloud Director Provider
 provider "vcd" {
-  user                 = "timucin.devirmis"
-  password             =  "X9stFZsQpC4w!a"
+  user                 = "administrator"
+  password             =  "Mob12345!"
   org                  = "System"
-  url                  = "https://31.145.174.203/api"
+  url                  = "https://81.8.0.53/api"
   max_retry_timeout    = "60"
   allow_unverified_ssl = "true"
 }
