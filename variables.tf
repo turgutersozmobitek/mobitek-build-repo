@@ -6,6 +6,16 @@ variable "vcenter_name" {
     description = "vCenter Name"
 }
 
+variable "cd_username" {
+    type        = string
+    description = "vCenter UserName"
+}
+variable "cd_password" {
+    type        = string
+    description = "vCenter Password"
+}
+
+
 variable "org_name" {
     type        = string
     description = "Organizasyon İsmi"
