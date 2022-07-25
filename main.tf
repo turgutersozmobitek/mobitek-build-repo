@@ -5,7 +5,7 @@ resource "vcd_external_network" "extnet" {
   description = var.extnet_description
 
     vsphere_network {
-    name    = "DPortGroup"
+    name    = var.extnet_name
     type    = "DV_PORTGROUP"
     vcenter = var.vcenter_name
   }
@@ -80,7 +80,7 @@ resource "vcd_org_vdc" "vdc-name" {
    org = var.org_name
    vdc = var.vdc_name
    name = var.extnet_name
-   external_network = "Dijitalisyerim_VLAN"
+   external_network = var.extnet_name
    depends_on = [vcd_org_vdc.vdc-name]
  }
 
