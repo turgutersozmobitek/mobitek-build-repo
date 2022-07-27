@@ -5,7 +5,7 @@ resource "vcd_external_network" "extnet" {
   description = var.extnet_description
 
     vsphere_network {
-    name    = "DPortGroup"
+    name    = var.extnet_name
     type    = "DV_PORTGROUP"
     vcenter = var.vcenter_name
   }
