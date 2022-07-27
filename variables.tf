@@ -15,6 +15,11 @@ variable "cd_password" {
     description = "vCenter Password"
 }
 
+variable "cd_vdcadres" {
+    type        = string
+    description = "vCenter Password"
+}
+
 
 variable "org_name" {
     type        = string
