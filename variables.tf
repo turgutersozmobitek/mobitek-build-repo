@@ -72,6 +72,13 @@ variable "vdc_storage_limit" {
 
 
 # vCloud Director External Network
+
+variable "dvport_name" {
+    type        = string
+    description = "vCenter VLAN Adı"
+    
+}
+    
 variable "extnet_name" {
     type        = string
     description = "External Network Name"
