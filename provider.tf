@@ -12,6 +12,6 @@ provider "vcd" {
   password             =  var.cd_password
   org                  = "System"
   url                  =  var.cd_vdcadres
-  max_retry_timeout    = "60"
+  max_retry_timeout    = "300"
   allow_unverified_ssl = "true"
 }
