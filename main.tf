@@ -49,10 +49,10 @@ resource "vcd_org_vdc" "vdc-name" {
 
   compute_capacity {
     cpu {
-      allocated = var.org_cpu_val
+      allocated = var.org_cp_val
     }
     memory {
-      allocated = var.org_memory_val
+      allocated = var.org_mem_val
     }
   }
 
