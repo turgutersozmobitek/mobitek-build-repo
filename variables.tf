@@ -8,16 +8,16 @@ variable "vcenter_name" {
 
 variable "cd_username" {
     type        = string
-    description = "vCenter UserName"
+    description = "CloudDirector UserName"
 }
 variable "cd_password" {
     type        = string
-    description = "vCenter Password"
+    description = "CloudDirector Password"
 }
 
 variable "cd_vdcadres" {
     type        = string
-    description = "vCenter Password"
+    description = "CloudDirector Adresi"
 }
 
 
@@ -37,15 +37,10 @@ variable "org_description" {
 }
 
 # vCloud Director Organization VDC Variables
-variable "vdc_net_pool" {
-    type        = string
-    default     = "General"
-    description = "VDC Network Pool"
-}
 variable "vdc_pvdc_name" {
     type        = string
-    default     = "Provider-VDC2"
-    description = "VDC Provider VDC Name (Provider-VDC2 - Provider-VDC3)"
+    default     = "list"
+    description = "Provider VDC Adı:"
 }
 
 variable "vdc_name" {
@@ -62,17 +57,19 @@ variable "vdc_description" {
 
 variable "org_cp_val" {
     type        = string
+    default     = "list"
     description = "VDC Cpu Kota"    
 }    
 
 variable "org_mem_val" {
     type        = string
+    default     = "list"   
     description = "VDC Memory Kota"    
 }
     
 variable "vdc_storage_name" {
     type        = string
-    default     = "vCloud-Esenyurt"
+    default     = "list"
     description = "VDC Storage Policy"
 }
 variable "vdc_storage_limit" {
@@ -101,27 +98,22 @@ variable "extnet_description" {
 }
 variable "extnet_gw" {
     type        = string
-    default     = "81.8.0.125"
     description = "External Network Gateway"
 }
 variable "extnet_mask" {
     type        = string
-    default     = "255.255.255.0"
     description = "External Network Mask"
 }
 variable "extnet_dns1" {
     type        = string
-    default     = "1.1.1.1"
     description = "External Network DNS1"
 }
 variable "extnet_dns2" {
     type        = string
-    default     = "1.0.0.1"   
     description = "External Network DNS2"
 }
 variable "extnet_suffix" {
     type        = string
-    default     = ""
     description = "External Network DNS Suffix"
 }
 variable "extnet_ip_pool_start" {
