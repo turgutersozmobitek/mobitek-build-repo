@@ -43,14 +43,14 @@ variable "vdc_alloc_model" {
     description = "VDC Allocation Model"
 }
 variable "vdc_net_pool" {
-        type        = string
-        default     = "General"
-        description = "VDC Network Pool"
+    type        = string
+    default     = "General"
+    description = "VDC Network Pool"
 }
 variable "vdc_pvdc_name" {
-        type        = string
-        default     = "Provider-VDC2"
-        description = "VDC Provider VDC Name (Provider-VDC2 - Provider-VDC3)"
+    type        = string
+    default     = "Provider-VDC2"
+    description = "VDC Provider VDC Name (Provider-VDC2 - Provider-VDC3)"
 }
 variable "vdc_description" {
     type        = string
@@ -59,17 +59,30 @@ variable "vdc_description" {
 variable "vdc_name" {
     type        = string
     description = "VDC Name"
+    
+variable "org_cpu_val" {
+    type        = string
+    description = "VDC Cpu Kota"    
+}    
+
+variable "org_memory_val" {
+    type        = string
+    description = "VDC Memory Kota"    
+}
+    
 }
 variable "vdc_storage_name" {
-        type        = string
-        default     = "vCloud-Esenyurt"
-        description = "VDC Storage Policy"
+    type        = string
+    default     = "vCloud-Esenyurt"
+    description = "VDC Storage Policy"
 }
 variable "vdc_storage_limit" {
-        type        = string
-        description = "VDC Storage Limit"
+    type        = string
+    description = "VDC Storage Limit"
 }
 
+
+    
 
 # vCloud Director External Network
 
