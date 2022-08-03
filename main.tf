@@ -44,7 +44,7 @@ resource "vcd_org_vdc" "vdc-name" {
   org         = var.org_name
 
   allocation_model = "AllocationVApp"
-  network_pool_name = "Provider-GENEVE-NP"
+  network_pool_name = var.vdc_net_pool
   provider_vdc_name = var.vdc_pvdc_name
 
   compute_capacity {
