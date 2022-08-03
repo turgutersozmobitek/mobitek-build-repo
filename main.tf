@@ -32,7 +32,7 @@ resource "vcd_org" "org-name" {
   is_enabled          = "true"
   delete_recursive    = "true"
   delete_force        = "true"
-  can_publish_catalogs = "false"
+  can_publish_catalogs = "true"
   depends_on = [vcd_external_network.extnet]
 }
 
@@ -49,10 +49,10 @@ resource "vcd_org_vdc" "vdc-name" {
 
   compute_capacity {
     cpu {
-      allocated = 0
+      allocated = var.org_cpu_val
     }
     memory {
-      allocated = 0
+      allocated = var.org_memory_val
     }
   }
 
@@ -61,11 +61,10 @@ resource "vcd_org_vdc" "vdc-name" {
     limit = var.vdc_storage_limit
     default = true
   }
-
+  vm_quota = var.vm_quota
   cpu_guaranteed = 0
   memory_guaranteed = 0
-  cpu_speed = 40000
-  network_quota = 10
+  cpu_speed = 2000
   enabled = true
   enable_thin_provisioning = true
   enable_fast_provisioning = false
