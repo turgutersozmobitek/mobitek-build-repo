@@ -47,14 +47,19 @@ variable "vdc_pvdc_name" {
     default     = "Provider-VDC2"
     description = "VDC Provider VDC Name (Provider-VDC2 - Provider-VDC3)"
 }
+
+variable "vdc_name" {
+    type        = string
+    description = "VDC Name"
+
+}
+
 variable "vdc_description" {
     type        = string
     description = "VDC Description"
 }
-variable "vdc_name" {
-    type        = string
-    description = "VDC Name"
-    
+
+
 variable "org_cpu_val" {
     type        = string
     description = "VDC Cpu Kota"    
@@ -65,7 +70,6 @@ variable "org_memory_val" {
     description = "VDC Memory Kota"    
 }
     
-}
 variable "vdc_storage_name" {
     type        = string
     default     = "vCloud-Esenyurt"
