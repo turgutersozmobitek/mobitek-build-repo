@@ -60,12 +60,12 @@ variable "vdc_description" {
 }
 
 
-variable "org_cpu_val" {
+variable "org_cp_val" {
     type        = string
     description = "VDC Cpu Kota"    
 }    
 
-variable "org_memory_val" {
+variable "org_mem_val" {
     type        = string
     description = "VDC Memory Kota"    
 }
