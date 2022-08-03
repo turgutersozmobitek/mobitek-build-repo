@@ -43,7 +43,7 @@ resource "vcd_org_vdc" "vdc-name" {
   description = var.vdc_description
   org         = var.org_name
 
-  allocation_model = var.vdc_alloc_model
+  allocation_model = "AllocationVApp"
   network_pool_name = var.vdc_net_pool
   provider_vdc_name = var.vdc_pvdc_name
 
