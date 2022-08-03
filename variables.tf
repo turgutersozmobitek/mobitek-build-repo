@@ -3,6 +3,7 @@
 
 variable "vcenter_name" {
     type        = string
+    default     = "list"
     description = "vCenter Name"
 }
 
@@ -82,7 +83,11 @@ variable "vdc_storage_limit" {
     description = "VDC Storage Limit"
 }
 
-
+variable "vdc_net_pool" {
+    type        = string
+    default     = "list"
+    description = "VDC Network Pool" 
+}
     
 
 # vCloud Director External Network
