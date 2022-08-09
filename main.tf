@@ -33,6 +33,16 @@ resource "vcd_org" "org-name" {
   delete_recursive    = "true"
   delete_force        = "true"
   can_publish_catalogs = "false"
+  vapp_lease {
+  maximum_runtime_lease_in_sec          = 0 # 1 hour
+  power_off_on_runtime_lease_expiration = false
+  maximum_storage_lease_in_sec          = 0 # never expires
+  delete_on_storage_lease_expiration    = false
+  }
+  vapp_template_lease {
+  maximum_storage_lease_in_sec       = 0 # 1 week
+  delete_on_storage_lease_expiration = false
+  }
   depends_on = [vcd_external_network.extnet]
 }
 
