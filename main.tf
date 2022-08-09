@@ -32,7 +32,7 @@ resource "vcd_org" "org-name" {
   is_enabled          = "true"
   delete_recursive    = "true"
   delete_force        = "true"
-  can_publish_catalogs = "true"
+  can_publish_catalogs = "false"
   depends_on = [vcd_external_network.extnet]
 }
 
@@ -90,6 +90,10 @@ resource "vcd_org_vdc" "vdc-name" {
    org = var.org_name
    vdc = var.vdc_name
    power_on = true
+     lease {
+    runtime_lease_in_sec = 0 # extends the runtime lease to 30 days
+    storage_lease_in_sec = 0  # extends the storage lease to 7 days
+  }
    depends_on = [vcd_network_direct.netdirect]
    
  }
