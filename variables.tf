@@ -1,91 +1,90 @@
-
 # vCloud Director Organization Variables
 
 variable "vcenter_name" {
     type        = string
     default     = "list"
-    description = "vCenter Name*"
+    description = "vCenter Name"
 }
 
 variable "cd_username" {
     type        = string
-    description = "CloudDirector UserName*"
+    description = "CloudDirector UserName"
 }
 variable "cd_password" {
     type        = string
-    description = "CloudDirector Password*"
+    description = "CloudDirector Password"
 }
 
 variable "cd_vdcadres" {
     type        = string
-    description = "CloudDirector Adresi*"
+    description = "CloudDirector Adresi"
 }
 
 
 variable "org_name" {
     type        = string
-    description = "Organizasyon İsmi*"
+    description = "Organizasyon İsmi"
 }
 
 variable "org_full_name" {
     type        = string
-    description = "Organizasyon Tam İsmi*"
+    description = "Organizasyon Tam İsmi"
 }
 
 variable "org_description" {
     type        = string
-    description = "Organizasyon Açıklaması*"
+    description = "Organizasyon Açıklaması"
 }
 
 # vCloud Director Organization VDC Variables
 variable "vdc_pvdc_name" {
     type        = string
     default     = "list"
-    description = "Provider VDC Adı:*"
+    description = "Provider VDC Adı:"
 }
 
 variable "vdc_name" {
     type        = string
-    description = "VDC Name*"
+    description = "VDC Name"
 }
 
 variable "vdc_description" {
     type        = string
-    description = "VDC Description*"
+    description = "VDC Description"
 }
 
 
 variable "org_cp_val" {
     type        = string
     default     = "list"
-    description = "VDC Cpu Kota*"    
+    description = "VDC Cpu Kota"    
 }    
 
 variable "org_mem_val" {
     type        = string
     default     = "list"   
-    description = "VDC Memory Kota*"    
+    description = "VDC Memory Kota"    
 }
 
 variable "vm_quota" {
     type        = string
-    description = "VM Kotası*"  
+    description = "VM Kotası"  
 }
     
 variable "vdc_storage_name" {
     type        = string
     default     = "list"
-    description = "VDC Storage Policy*"
+    description = "VDC Storage Policy"
 }
 variable "vdc_storage_limit" {
     type        = string
-    description = "VDC Storage Limit*"
+    description = "VDC Storage Limit"
 }
 
 variable "vdc_net_pool" {
     type        = string
     default     = "list"
-    description = "VDC Network Pool*" 
+    description = "VDC Network Pool" 
 }
     
 
@@ -93,12 +92,12 @@ variable "vdc_net_pool" {
 
 variable "dvport_name" {
     type        = string
-    description = "vCenter VLAN Adı*"
+    description = "vCenter VLAN Adı"
 }
     
 variable "extnet_name" {
     type        = string
-    description = "External Network Name*"
+    description = "External Network Name"
 }
 variable "extnet_description" {
     type        = string
@@ -106,11 +105,11 @@ variable "extnet_description" {
 }
 variable "extnet_gw" {
     type        = string
-    description = "External Network Gateway*"
+    description = "External Network Gateway"
 }
 variable "extnet_mask" {
     type        = string
-    description = "External Network Mask*"
+    description = "External Network Mask"
 }
 variable "extnet_dns1" {
     type        = string
@@ -126,20 +125,18 @@ variable "extnet_suffix" {
 }
 variable "extnet_ip_pool_start" {
     type        = string
-    description = "External Network IP Pool Start Address*"
+    description = "External Network IP Pool Start Address"
 }
 variable "extnet_ip_pool_end" {
     type        = string
-    description = "External Network IP Pool End Address*"
+    description = "External Network IP Pool End Address"
 }
 
 variable "vapp_name" {
     type        = string
-    description = "vAPP Adı:*"
+    description = "vApp Uygulama adını giriniz."
 }
 variable "vapp_description" {
     type        = string
-    description = "vAPP Açıklaması:"
+    description = "vApp Açıklamasını giriniz."
 }
-
-
