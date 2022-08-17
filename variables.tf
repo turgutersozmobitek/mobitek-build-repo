@@ -47,6 +47,7 @@ variable "vdc_pvdc_name" {
 variable "vdc_name" {
     type        = string
     description = "VDC Name"
+
 }
 
 variable "vdc_description" {
@@ -96,6 +97,7 @@ variable "vdc_net_pool" {
 variable "dvport_name" {
     type        = string
     description = "vCenter VLAN Adı"
+    
 }
     
 variable "extnet_name" {
@@ -152,3 +154,5 @@ variable "vapp_description" {
     type        = string
     description = "vApp Açıklamasını giriniz."
 }
+
+
