@@ -96,8 +96,7 @@ variable "vdc_net_pool" {
 
 variable "dvport_name" {
     type        = string
-    description = "vCenter VLAN Adı"
-    
+    description = "vCenter VLAN Adı"   
 }
     
 variable "extnet_name" {
