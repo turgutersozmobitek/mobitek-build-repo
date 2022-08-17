@@ -10,6 +10,7 @@ variable "cd_username" {
     type        = string
     description = "CloudDirector UserName"
 }
+
 variable "cd_password" {
     type        = string
     description = "CloudDirector Password"
@@ -68,7 +69,8 @@ variable "org_mem_val" {
 
 variable "vm_quota" {
     type        = string
-    description = "VM Kotası"  
+    description = "VM Kotası"
+    default     = "list"  
 }
     
 variable "vdc_storage_name" {
@@ -76,6 +78,7 @@ variable "vdc_storage_name" {
     default     = "list"
     description = "VDC Storage Policy"
 }
+
 variable "vdc_storage_limit" {
     type        = string
     description = "VDC Storage Limit"
@@ -99,34 +102,42 @@ variable "extnet_name" {
     type        = string
     description = "External Network Name"
 }
+
 variable "extnet_description" {
     type        = string
     description = "External Network Description"
 }
+
 variable "extnet_gw" {
     type        = string
     description = "External Network Gateway"
 }
+
 variable "extnet_mask" {
     type        = string
     description = "External Network Mask"
 }
+
 variable "extnet_dns1" {
     type        = string
     description = "External Network DNS1"
 }
+
 variable "extnet_dns2" {
     type        = string
     description = "External Network DNS2"
 }
+
 variable "extnet_suffix" {
     type        = string
     description = "External Network DNS Suffix"
 }
+
 variable "extnet_ip_pool_start" {
     type        = string
     description = "External Network IP Pool Start Address"
 }
+
 variable "extnet_ip_pool_end" {
     type        = string
     description = "External Network IP Pool End Address"
@@ -136,6 +147,7 @@ variable "vapp_name" {
     type        = string
     description = "vApp Uygulama adını giriniz."
 }
+
 variable "vapp_description" {
     type        = string
     description = "vApp Açıklamasını giriniz."
