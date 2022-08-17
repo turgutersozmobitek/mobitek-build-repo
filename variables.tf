@@ -47,7 +47,6 @@ variable "vdc_pvdc_name" {
 variable "vdc_name" {
     type        = string
     description = "VDC Name"
-
 }
 
 variable "vdc_description" {
